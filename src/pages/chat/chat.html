@@ -15,11 +15,17 @@
 <ion-content padding>
 
   <ion-card>
+    <ion-card-header>
+      <strong>X-Bot a tu servicio.</strong>
+    </ion-card-header>
+    <ion-card-content>
+      Por favor, selecciona la mejor opción:
+    </ion-card-content>
     <div *ngFor="let bot of bot1">
-      <button ion-item (click)="test(bot)">
-        <ion-icon name="happy"></ion-icon>
+      <ion-card-content (click)="checkBot(bot)" color="primary">
+        <ion-icon name="arrow-dropright-circle"></ion-icon>
         {{bot}}
-      </button>
+      </ion-card-content>
     </div>
   </ion-card>
 
