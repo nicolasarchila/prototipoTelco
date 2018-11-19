@@ -12,7 +12,15 @@
 
 </ion-header>
 
-
 <ion-content padding>
+
+  <ion-card>
+    <div *ngFor="let bot of bot1">
+      <button ion-item (click)="test(bot)">
+        <ion-icon name="happy"></ion-icon>
+        {{bot}}
+      </button>
+    </div>
+  </ion-card>
 
 </ion-content>
