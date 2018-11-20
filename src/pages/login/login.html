@@ -19,15 +19,18 @@
   -->
 
 
-    <ion-item>
-        <ion-label fixed>Usuario</ion-label>
-        <ion-input type="text" value="" [(ngModel)]="user"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label fixed>Contraseña</ion-label>
-        <ion-input type="password" [(ngModel)]="password"></ion-input>
-      </ion-item>
+  <ion-item>
+    <ion-label floating>Usuario</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="user"></ion-input>
+  </ion-item>
 
-    <button ion-button full (click)="loginUser()">Ingresar</button>
+  <ion-item>
+    <ion-label floating>Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+  <br />
+
+  <button ion-button icon-start block (click)="loginUser()">
+    <ion-icon name="person"></ion-icon> Ingresar
+  </button>
 </ion-content>

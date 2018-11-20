@@ -37,6 +37,21 @@ export class ChatPage {
            '100 minutos + 2G de datos + telefonía ilimitada.',
            'Hacer otra pregunta.'];
 
+  datos = ['Plan 10G de datos + redes sociales ilimitada.', 
+           'Plan 5G de datos + redes sociales ilimitada.', 
+           'Plan 2G de datos + chat de whatsapp.',
+           'Hacer otra pregunta.'];
+
+  voz = ['300 minutos.', 
+         '200 minutos.', 
+         '100 minutos.',
+         'Hacer otra pregunta.'];
+
+  soporte = ['Problemas con su plan de datos', 
+             'Problemas con su línea fija.', 
+             'Problemas con su red wifi.',
+             'Hacer otra pregunta.'];
+
   personalizado = ['Debido a tu buen comportamiento tienes acceso a un paquete especial de redes sociales',
              'Hacer otra pregunta,'];
 
@@ -55,9 +70,11 @@ export class ChatPage {
       case 'Adquirir nuevos productos.': this.bot1 = this.productos; break;
       case 'Solo para ti.': this.bot1 = this.personalizado; break;
       case 'Adquirir Combos.': this.bot1 = this.combos; break;
-
+      case 'Planes solo datos.': this.bot1 = this.datos; break;
+      case 'Planes solo voz.': this.bot1 = this.voz; break;
+      case 'Soporte técnico.': this.bot1 = this.soporte; break;
       case 'Hacer otra pregunta.': this.bot1 = this.start; break;
-      default : this.bot1 = this.start; break;
+      default: break;
     }
   }
 
