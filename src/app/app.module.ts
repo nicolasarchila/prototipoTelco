@@ -1,3 +1,4 @@
+import { CreatorPage } from './../pages/creator/creator';
 import { ContactPage } from './../pages/contact/contact';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -15,7 +16,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     LoginPage,
     ChatPage,
-    ContactPage
+    ContactPage, 
+    CreatorPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     LoginPage,
     ChatPage,
-    ContactPage
+    ContactPage, 
+    CreatorPage
     ],
   providers: [
     StatusBar,
