@@ -59,7 +59,7 @@ export class ChatPage {
     'Hacer otra pregunta.'];
 
   personalizado = ['Debido a tu buen comportamiento tienes acceso a un paquete especial de redes sociales',
-    'Hacer otra pregunta,'];
+    'Hacer otra pregunta.'];
 
   constructor(public navCtrl: NavController,
     public navParams: NavParams,
