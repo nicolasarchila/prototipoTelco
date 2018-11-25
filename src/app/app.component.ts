@@ -1,3 +1,4 @@
+//import { ContactPage } from './../pages/contact/contact';
 //import { ChatPage } from './../pages/chat/chat';
 import { LoginPage } from './../pages/login/login';
 import { Component } from '@angular/core';

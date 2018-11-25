@@ -5,15 +5,12 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <ion-title>chat</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 <ion-content padding>
-
   <ion-card>
     <ion-card-header>
       <strong>X-Bot a tu servicio.</strong>
@@ -27,8 +24,6 @@
         {{bot}}
       </ion-card-content>
     </div>
-
-
   </ion-card>
 
   <ion-card>
@@ -36,12 +31,11 @@
       <strong>¿No encuentras lo que buscas?</strong>
     </ion-card-header>
     <ion-item>      
-      <button ion-button icon-start block>
+      <button ion-button icon-start block (click)="toContact()">
         <ion-icon name="call"></ion-icon>   
         Te llamamos
       </button>
     </ion-item>
-
   </ion-card>
 
 </ion-content>

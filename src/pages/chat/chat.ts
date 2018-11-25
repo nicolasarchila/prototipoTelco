@@ -1,3 +1,4 @@
+import { ContactPage } from './../contact/contact';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
@@ -76,6 +77,10 @@ export class ChatPage {
       case 'Hacer otra pregunta.': this.bot1 = this.start; break;
       default: break;
     }
+  }
+
+  toContact(){
+    this.navCtrl.push(ContactPage);
   }
 
 }
