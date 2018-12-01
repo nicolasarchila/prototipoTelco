@@ -1,6 +1,9 @@
 {
   "name": "TelcoAlpes",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
-  "pro_id": "d21032e2"
+  "pro_id": "d21032e2",
+  "id": "d21032e2"
 }
